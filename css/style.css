@@ -136,12 +136,17 @@ header{
     /* step 18 */
     .pricing{
         align-items: flex-end;
+        flex-direction: row;
+        /* add a page break after  */
+        page-break-after: always;
     }
 
     /* step 19 */
     .card{
         border: solid 2px #45ADDD;
-        flex-basis: 325px;
+        /* flex-basis: 325px; note: 325px did not fit on any browser */
+        /* space all 3 cards evenly */
+        flex: 1 1 30%;
     }
 
     /* step 20 */
